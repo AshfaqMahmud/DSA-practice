@@ -1,23 +1,25 @@
 /*
-    print for n = 3
-        1 2 3
-        4 5 6
-        7 8 9
+    print
+        1 
+        2 3 
+        3 4 5 
+        4 5 6 7
 */
-
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n,a=1;
+    int n;
     cin>>n;
     for(int i=0; i<n; i++)
     {
-        for(int j=0; j<n; j++)
+        int tmp = i+1;
+        for(int j=0; j<i+1; j++)
         {
-            cout<<a++<<" ";
+            cout<<tmp++<<" ";
         }
         cout<<"\n";
     }
+
     return 0;
 }
